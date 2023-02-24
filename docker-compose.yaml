@@ -1,0 +1,14 @@
+version: '1'
+
+services:
+  mymoneytransfer:
+    image: 'mymoneytransfer:1.0'
+    ports:
+      - '8080:8080'
+    build: ./
+
+  cardtransferFront:
+    image: 'front:latest'
+    ports:
+      - '3000:3000'
+    build: ./
